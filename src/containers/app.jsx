@@ -4,22 +4,36 @@ import Search from "../components/Search";
 import Categories from "../components/Categories";
 import Carousel from "../components/Carousel";
 import CarouselItem from "../components/CaouselItem";
-import '../assets/styles/App.scss';
+import Footer from "../components/Footer.jsx";
 
+import '../assets/styles/App.scss';
 
 const App = () => (
     <div className="App">
-        <Header></Header>
-        <Search></Search>
-        <Categories>
-            <Carousel>
-                <CarouselItem>
-                </CarouselItem>
-                <CarouselItem></CarouselItem>
+        <Header />
+        <Search />
+        <Categories title="Mi lista">
+            <Carousel >
+                <CarouselItem />
+                <CarouselItem />
+                <CarouselItem />
+                <CarouselItem />
             </Carousel>
         </Categories>
-
-
+        <Categories title="Tendencias">
+            <Carousel>
+                <CarouselItem />
+                <CarouselItem />
+                <CarouselItem />
+            </Carousel>
+        </Categories>
+        <Categories title="Originales PlatziVideo">
+            <Carousel>
+                <CarouselItem />
+                <CarouselItem />
+            </Carousel>
+        </Categories>
+        <Footer />
     </div>
 );
 
